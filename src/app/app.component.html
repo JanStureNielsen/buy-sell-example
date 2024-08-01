@@ -7,11 +7,11 @@
         <span [ngClass]="sellColor()" (click)="isSell=true">SELL</span>
       </div>
       <div>
-        <input [style]="getStyle()" type="range" id="units" name="units" min="1" max="10" value="1"/>
+        <input [style]="getStyle()" type="range" id="units" name="units" [min]="unitsMin" [max]="unitsMax" [(ngModel)]="units"/>
         <label for="units">units</label>
       </div>
       <div>
-        <input [style]="getStyle()" type="range" id="price" name="price" min="1" max="100" value="1"/>
+        <input [style]="getStyle()" type="range" id="price" name="price" [min]="priceMin" [max]="priceMax" [(ngModel)]="price"/>
         <label for="price">price</label>
       </div>
       <div>
@@ -25,36 +25,37 @@
 
     <div class="order-control">
       <div>
-    <mat-button-toggle-group name="side" aria-label="Font Style">
-      <mat-button-toggle value="buy">BUY</mat-button-toggle>
-      <mat-button-toggle value="sell">SELL</mat-button-toggle>
-    </mat-button-toggle-group>
-    </div>
-    <div>
-    <mat-slider
-      [max]="unitsMax"
-      [min]="unitsMin"
-      [step]="unitsStep"
-      discrete
-      showTickMarks>
-      <input matSliderThumb #unitsSlider>
-    </mat-slider>
-    </div>
-
-      <div>
-    <mat-slider
-      class="example-margin"
-      [max]="priceMax"
-      [min]="priceMin"
-      [step]="priceStep"
-      discrete
-      showTickMarks>
-      <input matSliderThumb #priceSlider>
-    </mat-slider>
+        <mat-button-toggle-group name="side" aria-label="Font Style" [(ngModel)]="isSell">
+          <mat-button-toggle [value]="false">BUY</mat-button-toggle>
+          <mat-button-toggle [value]="true">SELL</mat-button-toggle>
+        </mat-button-toggle-group>
       </div>
 
       <div>
-    <button mat-stroked-button>Submit Order</button>
+        <mat-slider
+          [max]="unitsMax"
+          [min]="unitsMin"
+          [step]="unitsStep"
+          discrete
+          showTickMarks>
+          <input matSliderThumb [(ngModel)]="units" #unitsSlider>
+        </mat-slider>
+      </div>
+
+      <div>
+        <mat-slider
+          class="example-margin"
+          [max]="priceMax"
+          [min]="priceMin"
+          [step]="priceStep"
+          discrete
+          showTickMarks>
+          <input matSliderThumb [(ngModel)]="price" #priceSlider>
+        </mat-slider>
+      </div>
+
+      <div>
+        <button mat-flat-button>Submit Order</button>
       </div>
     </div>
 
