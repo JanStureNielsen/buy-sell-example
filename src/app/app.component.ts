@@ -52,11 +52,4 @@ export class AppComponent {
     return this.isSell ? 'sell' : 'buy';
   }
 
-  getStyle() {
-    const color = this.isSell ? 'red' : "blue"
-    const style = "color: " + color + "; accent-color: " + color;
-
-    return style;
-  }
-
 }
