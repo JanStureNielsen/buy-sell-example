@@ -48,8 +48,12 @@ export class AppComponent {
     return this.isSell ? 'sell' : '';
   }
 
-  getColor() {
+  color() {
     return this.isSell ? 'sell' : 'buy';
+  }
+
+  colorSlider() {
+    return this.isSell ? 'sell-slider' : 'buy-slider';
   }
 
 }
