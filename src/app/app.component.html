@@ -3,19 +3,19 @@
     <h1>Simple HTML</h1>
     <div class="order-control">
       <div>
-        <span [ngClass]="buyColor()" (click)="isSell=false">BUY</span>
-        <span [ngClass]="sellColor()" (click)="isSell=true">SELL</span>
+        <span [class]="buyColor()" (click)="isSell=false">BUY</span>
+        <span [class]="sellColor()" (click)="isSell=true">SELL</span>
       </div>
       <div>
-        <input [style]="getStyle()" type="range" id="units" name="units" [min]="unitsMin" [max]="unitsMax" [(ngModel)]="units"/>
+        <input [class]="getColor()" type="range" id="units" name="units" [min]="unitsMin" [max]="unitsMax" [(ngModel)]="units"/>
         <label for="units">units</label>
       </div>
       <div>
-        <input [style]="getStyle()" type="range" id="price" name="price" [min]="priceMin" [max]="priceMax" [(ngModel)]="price"/>
+        <input [class]="getColor()" type="range" id="price" name="price" [min]="priceMin" [max]="priceMax" [(ngModel)]="price"/>
         <label for="price">price</label>
       </div>
       <div>
-        <button [style]="getStyle()" type="button">Submit order</button>
+        <button [class]="getColor()" type="button">Submit order</button>
       </div>
     </div>
   </section>
