@@ -56,4 +56,8 @@ export class AppComponent {
     return this.isSell ? 'sell-slider' : 'buy-slider';
   }
 
+  colorMaterial() {
+    return this.isSell ? 'primary' : 'accent';
+  }
+
 }

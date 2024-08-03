@@ -23,3 +23,95 @@
 
 }
 
+// primary color
+.mat-mdc-slider.mat-primary {
+  --mdc-slider-handle-color: red;
+  --mdc-slider-focus-handle-color: red;
+  --mdc-slider-active-track-color: red;
+  --mdc-slider-inactive-track-color: red;
+  --mdc-slider-with-tick-marks-active-container-color: red;
+  --mat-mdc-slider-hover-ripple-color: red;
+  --mat-mdc-slider-focus-ripple-color: red;
+}
+
+.mat-mdc-slider.mat-primary {
+  --mdc-slider-label-container-color: red;
+  --mdc-slider-label-label-text-color: #fff;
+  --mat-mdc-slider-value-indicator-opacity: 0.61;
+}
+
+// accent color
+.mat-mdc-slider.mat-accent {
+  --mdc-slider-handle-color: blue;
+  --mdc-slider-focus-handle-color: blue;
+  --mdc-slider-active-track-color: blue;
+  --mdc-slider-inactive-track-color: blue;
+  --mdc-slider-with-tick-marks-active-container-color: blue;
+  --mat-mdc-slider-hover-ripple-color: blue;
+  --mat-mdc-slider-focus-ripple-color: blue;
+}
+
+.mat-mdc-slider.mat-accent {
+  --mdc-slider-label-container-color: blue;
+  --mdc-slider-label-label-text-color: #fff;
+  --mat-mdc-slider-value-indicator-opacity: 0.61;
+}
+
+// warn color
+.mat-mdc-slider.mat-warn {
+  --mdc-slider-handle-color: #ecad00;
+  --mdc-slider-focus-handle-color: #ecad00;
+  --mdc-slider-active-track-color: #ecad00;
+  --mdc-slider-inactive-track-color: #ecad00;
+  --mdc-slider-with-tick-marks-active-container-color: #ecad00;
+  --mat-mdc-slider-hover-ripple-color: #ecad00;
+  --mat-mdc-slider-focus-ripple-color: #ecad00;
+}
+
+.mat-mdc-slider.mat-warn {
+  --mdc-slider-label-container-color: #ecad00;
+  --mdc-slider-label-label-text-color: #fff;
+  --mat-mdc-slider-value-indicator-opacity: 0.61;
+}
+
+// custom sell color
+.mat-mdc-slider.mat-sell {
+  --mdc-slider-handle-color: red;
+  --mdc-slider-focus-handle-color: red;
+  --mdc-slider-active-track-color: red;
+  --mdc-slider-inactive-track-color: red;
+  --mdc-slider-with-tick-marks-active-container-color: red;
+  --mat-mdc-slider-hover-ripple-color: red;
+  --mat-mdc-slider-focus-ripple-color: red;
+}
+
+.mat-mdc-slider.mat-sell {
+  --mdc-slider-label-container-color: red;
+  --mdc-slider-label-label-text-color: #fff;
+  --mat-mdc-slider-value-indicator-opacity: 0.61;
+}
+
+// custom buy color
+.mat-mdc-slider.mat-buy {
+  --mdc-slider-handle-color: blue;
+  --mdc-slider-focus-handle-color: blue;
+  --mdc-slider-active-track-color: blue;
+  --mdc-slider-inactive-track-color: blue;
+  --mdc-slider-with-tick-marks-active-container-color: blue;
+  --mat-mdc-slider-hover-ripple-color: blue;
+  --mat-mdc-slider-focus-ripple-color: blue;
+}
+
+.mat-mdc-slider.mat-buy {
+  --mdc-slider-label-container-color: blue;
+  --mdc-slider-label-label-text-color: #fff;
+  --mat-mdc-slider-value-indicator-opacity: 0.61;
+}
+
+.mat-mdc-button.mat-primary {
+  background-color: red;
+}
+
+.mat-mdc-button.mat-accent {
+  background-color: blue;
+}
