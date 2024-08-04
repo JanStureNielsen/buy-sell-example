@@ -134,6 +134,7 @@ $_rest: (
 );
 $_primary: map.merge(map.get($_palettes, primary), $_rest);
 $_tertiary: map.merge(map.get($_palettes, tertiary), $_rest);
+$_error: map.merge(map.get($_palettes, error), $_rest);
 
 $app-light-theme: mat.define-theme((
   color: (
