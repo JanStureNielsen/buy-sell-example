@@ -28,6 +28,34 @@ $buy-sell-example-theme: mat.define-theme((
   @include mat.all-component-themes($buy-sell-example-theme);
 }
 
+$buy-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$blue-palette,
+  ),
+  density: (
+    scale: 0,
+  )
+));
+
+$sell-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$red-palette,
+  ),
+  density: (
+    scale: 0,
+  )
+));
+
+.buy {
+  @include mat.all-component-colors($buy-theme);
+}
+
+.sell {
+  @include mat.all-component-colors($sell-theme);
+}
+
 // Comment out the line below if you want to use the pre-defined typography utility classes.
 // For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
 // @include mat.typography-hierarchy($buy-sell-example-theme);
