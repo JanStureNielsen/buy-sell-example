@@ -101,7 +101,7 @@
 
   <section>
     <h1>Angular Material -- theme</h1>
-    <div class="order-control">
+    <div class="order-control" [class]="isSell ? 'sell' : 'buy'">
       <div>
         <mat-button-toggle-group name="side" [(ngModel)]="isSell">
           <mat-button-toggle [value]="false">BUY</mat-button-toggle>
