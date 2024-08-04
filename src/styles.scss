@@ -17,14 +17,6 @@
   @include mat.all-component-themes($app-light-theme);
 }
 
-.light-theme {
-  @include mat.all-component-colors($app-light-theme);
-}
-
-.dark-theme {
-  @include mat.all-component-colors($app-dark-theme);
-}
-
 $buy-theme: mat.define-theme((
   color: (
     theme-type: light,
