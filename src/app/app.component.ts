@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NgClass } from "@angular/common";
 import { FormsModule} from "@angular/forms";
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
-import { MatCardModule } from "@angular/material/card";
-import { MatRadioModule } from "@angular/material/radio";
 import { MatSliderModule} from "@angular/material/slider";
 
 @Component({
@@ -14,12 +10,8 @@ import { MatSliderModule} from "@angular/material/slider";
   standalone: true,
   imports: [
     FormsModule,
-    RouterOutlet,
-    NgClass,
     MatButtonModule,
     MatButtonToggleModule,
-    MatCardModule,
-    MatRadioModule,
     MatSliderModule
   ],
   templateUrl: './app.component.html',
