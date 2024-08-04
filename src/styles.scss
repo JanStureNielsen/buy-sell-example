@@ -10,11 +10,35 @@
 @include mat.core();
 @import 'theme-m3';
 
+$app-light-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: $_primary,
+    tertiary: $_tertiary,
+    use-system-variables: true,
+  ),
+  typography: (
+    use-system-variables: true,
+  ),
+));
+
+$app-dark-theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: $_primary,
+    tertiary: $_tertiary,
+    use-system-variables: true,
+  ),
+  typography: (
+    use-system-variables: true,
+  ),
+));
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 :root {
-  @include mat.all-component-themes($dark-theme);
+  @include mat.all-component-themes($app-light-theme);
 }
 
 $buy-theme: mat.define-theme((
