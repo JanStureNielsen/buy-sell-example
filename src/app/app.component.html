@@ -21,7 +21,7 @@
   </section>
 
   <h1>Angular Material</h1>
-  <p>Three ways: CSS; color-attribute; and theme</p>
+  <p>Three ways: CSS; color attribute; and, theme</p>
 
   <section>
     <h1>Angular Material -- CSS</h1>
@@ -73,7 +73,7 @@
       </div>
 
       <div>
-        <mat-slider
+        <mat-slider [color]="colorMaterial()"
           [max]="unitsMax"
           [min]="unitsMin"
           [step]="unitsStep"
@@ -83,7 +83,7 @@
       </div>
 
       <div>
-        <mat-slider
+        <mat-slider [color]="colorMaterial()"
           [max]="priceMax"
           [min]="priceMin"
           [step]="priceStep"
@@ -93,7 +93,7 @@
       </div>
 
       <div>
-        <button mat-flat-button>Submit Order</button>
+        <button [color]="colorMaterial()" mat-flat-button>Submit Order</button>
       </div>
     </div>
 
