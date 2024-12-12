@@ -1,26 +1,5 @@
 <main>
   <section>
-    <h1>HTML</h1>
-    <div class="order-control">
-      <div>
-        <span [class]="buyColor()" (click)="isSell=false">BUY</span>
-        <span [class]="sellColor()" (click)="isSell=true">SELL</span>
-      </div>
-      <div>
-        <input [class]="color()" type="range" id="units" name="units" [min]="unitsMin" [max]="unitsMax" [(ngModel)]="units"/>
-        <label for="units">units</label>
-      </div>
-      <div>
-        <input [class]="color()" type="range" id="price" name="price" [min]="priceMin" [max]="priceMax" [(ngModel)]="price"/>
-        <label for="price">price</label>
-      </div>
-      <div>
-        <button [class]="color()" type="button">Submit order</button>
-      </div>
-    </div>
-  </section>
-
-  <section>
     <h1>Angular Material</h1>
     <div class="order-control" [class]="isSell ? 'sell-theme' : 'buy-theme'">
       <div>
