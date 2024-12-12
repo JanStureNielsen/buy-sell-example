@@ -1,26 +1,6 @@
-@use '@angular/material' as mat;
-
 .order-control {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  .sell {
-    accent-color: red;
-    background-color: red;
-  }
-
-  .buy {
-    accent-color: blue;
-    background-color: blue;
-  }
-
-  .sell-slider {
-    accent-color: red;
-  }
-
-  .buy-slider {
-    accent-color: blue;
-  }
 
 }
