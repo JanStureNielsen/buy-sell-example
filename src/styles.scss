@@ -44,7 +44,6 @@ $sell-theme: mat.define-theme((
 .sell-theme {
   @include mat.all-component-colors($sell-theme);
 }
-
 // Comment out the line below if you want to use the pre-defined typography utility classes.
 // For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
 // @include mat.typography-hierarchy($buy-sell-example-theme);
